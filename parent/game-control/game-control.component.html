@@ -1,0 +1,5 @@
+<div>
+    <p>Click corresponding buttons to start and stop the game timer.</p>
+    <button [disabled]="is_emitting" class="btn btn-primary btn-stt" (click)="start_game_call()">Start</button>
+    <button [disabled]="!is_emitting"  class="btn btn-primary btn-stp" (click)="stop_game_call()" >Stop</button>
+</div>

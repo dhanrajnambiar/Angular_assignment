@@ -1,0 +1,18 @@
+<div class= "container">
+    <div class="row">
+        <app-game-control 
+        (GameStartEvent)="increment_emit_count()"
+        (GameStopEvent)="store_emit_count()"
+        ></app-game-control>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <app-even *ngFor="let ev_count of even_emit_store" [even_count]="ev_count"></app-even>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+       <app-odd *ngFor="let od_count of odd_emit_store" [odd_count]="od_count"></app-odd> 
+    </div>
+</div>
